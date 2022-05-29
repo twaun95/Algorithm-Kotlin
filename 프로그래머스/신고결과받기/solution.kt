@@ -1,27 +1,18 @@
 class Solution {
     fun solution(id_list: Array<String>, report: Array<String>, k: Int): IntArray {
-        lateinit var answer: IntArray
-
         var answerList: MutableList<Int> = mutableListOf()
         var map: MutableMap<String, MutableSet<String>> = mutableMapOf() 
         var kMap: MutableMap<String, Int> = mutableMapOf()
-
-        println(id_list.toList())
 
         id_list.forEach{
             map.put(it, mutableSetOf())
             kMap.put(it, 0)
         }
 
-        println(map)
-        println(kMap)
-
         report.forEach{ 
-
             it.split(" ").let { splitedReport ->
                 map[splitedReport.first()]!!.add(splitedReport.last())
             }
-            
         }
 
         map.forEach {
@@ -30,25 +21,14 @@ class Solution {
             }
         }
 
-        println(map)
-        println(kMap)
-
-
         id_list.forEachIndexed { index, item ->
-            println(index)
-            println(item)
             answerList.add(0)
-
             map[item]!!.forEach {
                 if(kMap[it]!!>=k) {
                     answerList[index] += 1 
                 }
             }
         }
-
-        println(answerList)
-
-
 
         return answerList.toIntArray()
     }
