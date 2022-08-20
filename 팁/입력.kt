@@ -12,4 +12,8 @@ fun main() = with(System.`in`.bufferedReader()) {
         .split(" ")
         .map{ it.toInt()}
     )
+
+    val (N,M) = readLine().split(" ").map{ it.toInt()}
+
+    println("($N, $M)")
 }
