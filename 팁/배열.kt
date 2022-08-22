@@ -37,4 +37,8 @@ fun main() = with(System.`in`.bufferedReader()) {
     dArr4.forEach{ println(it.contentToString()) }
 
 
+    // val arr = IntArray(3)
+    // val visit = BooleanArray(3)
+
+    // println(arr)
 }
