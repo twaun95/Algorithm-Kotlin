@@ -13,3 +13,8 @@ fun fib(n: Int) : Int{
         }
     }
 }
+
+
+// 재귀(기록 없음)
+// dp (Bottom-UP)(Tabulation) : 0,1, 부터 채워나가기
+// dp (Top-Down)(Memorization) : 재귀를 이용한 기록
