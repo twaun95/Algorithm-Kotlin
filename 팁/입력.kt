@@ -16,4 +16,12 @@ fun main() = with(System.`in`.bufferedReader()) {
     val (N,M) = readLine().split(" ").map{ it.toInt()}
 
     println("($N, $M)")
+
+
+    // 출력
+    val sb = StringBuilder()
+
+    sb.append("adfas")
+    sb.append("\n")
+    sb.append("kk")
 }
