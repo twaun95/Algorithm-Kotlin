@@ -1,6 +1,6 @@
 // https://www.acmicpc.net/problem/10828
 // 스택
-
+    
 fun main() = with(System.`in`.bufferedReader()) {
     val N = readLine().toInt()
     val stack = mutableListOf<Int>()
