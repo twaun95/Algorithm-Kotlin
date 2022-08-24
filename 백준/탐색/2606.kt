@@ -16,9 +16,9 @@ fun main() = with(System.`in`.bufferedReader()) {
 
     // 초기화
     repeat(virusCount) {
-        val (n,m) = readLine().split(" ").map{ it.toInt() }
-        computers[n].add(m)
-        computers[m].add(n)
+        val (x,y) = readLine().split(" ").map{ it.toInt() }
+        computers[x].add(y)
+        computers[y].add(x)
     }
 
     println(bfs(1))
